@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "Rinding Cities",
+        "picture": "https://i.postimg.cc/J4wCZT75/ridingcity.png"
+    },
+    {
+        "id": 1,
+        "name": "Booki",
+        "picture": "https://i.postimg.cc/Ss3FZd6q/booki.png"
+    },
+    {
+        "id": 2,
+        "name": "OhMyFood",
+        "picture": "https://i.postimg.cc/xdsSmnqX/ohmyfood.png"
+    },
+    {
+        "id": 3,
+        "name": "Print It",
+        "picture": "https://i.postimg.cc/x8mrBm5m/printit.png"
+    },
+    {
+        "id": 4,
+        "name": "Sophie Bluel",
+        "picture": "https://i.postimg.cc/wv7YcZs0/sophiebluel.png"
+    },
+    {
+        "id": 5,
+        "name": "Kasa",
+        "picture": "https://i.postimg.cc/5t9Vj69c/kasa.png"
+    }
+]

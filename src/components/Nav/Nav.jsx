@@ -1,30 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./nav.css";
 import logo from "../../assets/images/visuart.png";
 
 function Nav() {
   return (
-    <main>
       <nav className="nav">
-
-          <h1>Portfolio par</h1>
-          <img src={logo} alt="Logo Visuart" />
-
+        <div className="logo-nav">
+          <h1>Développer par</h1>
+          <img src={logo} alt="Logo VisuArt" />
+        </div>
         <ul>
           <li>
-            <Link to="/">Accueil</Link>
+            <NavLink to="/">Accueil</NavLink>
           </li>
           <li>
-            <Link to="/visuart">Visuart</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
+            <a href="http://visuart.net" target="_blank" rel="noopener noreferrer">VisuArt</a>
           </li>
         </ul>
 
       </nav>
-    </main>
   )
 }
 

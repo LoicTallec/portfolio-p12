@@ -1,0 +1,41 @@
+.allcards {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    img {
+        border-radius: 20px;
+        box-shadow: 0 10px 15px rgb(200, 200, 200);
+
+
+        object-fit: cover;
+    }
+
+    figcaption {
+        
+    }
+}
+
+@media (min-width: 768px) {
+    .card img {
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card img {
+        max-width: 450px;
+    }
+    .hovered {
+        transition: 0.25s ease  
+    }
+}

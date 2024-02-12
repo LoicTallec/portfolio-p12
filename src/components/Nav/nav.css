@@ -1,73 +1,79 @@
 .nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(223, 223, 223);
+  box-shadow: 1px 0 10px rgb(105, 105, 105);
+
+
+  .logo-nav {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: rgb(235, 235, 235);
-    box-shadow: 1px 0 10px rgb(0, 0, 0);
+    margin: auto;
+  }
 
-    h1 {
-        margin: 10px;
-        width: 100%;
-        max-width: 200px;
-        text-align: center;
+  h1 {
+    margin: 10px;
+  }
+
+  img {
+    width: 50px;
+    height: 100%;
+  }
+
+  ul {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    justify-content: space-around;
+    margin: auto;
+
+    li {
+      margin: 20px;
+      font-size: 20px;
     }
-
-    img {
-        width: 100px;
-        height: 100%;
-    }
-
-    ul {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-
-        li {
-            margin: 20px;
-            font-size: 20px;
-        }
-    }
+  }
 }
 
 @media (min-width: 768px) {
-    .nav {
-
-        img {
-            width: 120px;
-        }
-        h1 {
-            font-size: 30px;
-        }
-
-        ul li {
-            font-size: 25px;
-        }
+  .nav {
+    flex-direction: column;
+    h1 {
+      font-size: 30px;
     }
+
+    ul li {
+      font-size: 25px;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-    .nav {
-      flex-direction: row;
+  .nav {
+    flex-direction: row;
 
-      img {
-        width: 140px;
-        margin: 10px 0;
+    .logo-nav {
+      margin-left: 0;
+    }
+    img {
+      margin: 10px 0;
+    }
+
+    h1 {
+      margin: 0 15px 0 30px;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    ul {
+      justify-content: right;
+      margin-right: 20px;
+
+      li {
+        margin-left: 100px;
+        font-size: 30px;
       }
-
-      h1 {
-        margin-left: 30px;
-      }
-
-      ul {
-        justify-content: right;
-        margin-right: 50px;
-
-        li {
-          margin-left: 100px;
-          font-size: 30px;
-        }
-        
-      }
-}
-
+    }    
+  }
 }
