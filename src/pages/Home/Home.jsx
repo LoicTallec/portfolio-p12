@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "./home.css";
 import Projects from "../../assets/projets.json"
-
 import Card from "../../components/Card/Card";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [cards, setCards] = useState([]);
@@ -25,7 +25,9 @@ function Home() {
         <h3>Mes projets réaliser</h3>
           {Projects.map((card) => (
             <li key={card.id}>
+              <Link to={`/fullCard/${card.id}`}>
               <Card src={card.picture} alt={card.title} content={card.name} />
+              </Link>
             </li>
           ))}
         </ul>

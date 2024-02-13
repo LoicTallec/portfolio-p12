@@ -6,10 +6,7 @@ import logo from "../../assets/images/visuart.png";
 function Nav() {
   return (
       <nav className="nav">
-        <div className="logo-nav">
-          <h1>Développer par</h1>
-          <img src={logo} alt="Logo VisuArt" />
-        </div>
+          <img src={logo} alt="Logo VisuArt" className="logo-nav"/>
         <ul>
           <li>
             <NavLink to="/">Accueil</NavLink>

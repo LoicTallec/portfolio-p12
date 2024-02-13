@@ -25,6 +25,7 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-family: 'roboto', sans-serif;
 }
 
 img {
@@ -33,4 +34,5 @@ img {
 
 main {
   padding: 15px;
+  font-family: 'roboto', sans-serif;
 }

@@ -14,9 +14,11 @@ function Card({ src, alt, content="" }) {
 
     return (
         <figure className={`card ${isHovered ? 'hovered' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <img src={src} alt={alt} />
             <figcaption>{content}</figcaption>
+            <img src={src} alt={alt} />
+            
         </figure>
     );
 }
+
 export default Card;

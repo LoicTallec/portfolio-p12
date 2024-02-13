@@ -5,7 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
 import Home from './pages/Home/Home';
+import FullCard from './pages/FullCard/FullCard';
 import Visuart from './pages/Visuart/Visuart';
+import Footer from './components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +16,10 @@ root.render(
       <Nav />
       <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/fullCard/:id" element={<FullCard />} />
           <Route path="/visuart" element={<Visuart />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

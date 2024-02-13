@@ -11,6 +11,7 @@
     flex-direction: column;
     border-radius: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 
     img {
         border-radius: 20px;
@@ -21,7 +22,10 @@
     }
 
     figcaption {
-        
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: 'Roboto';
+
     }
 }
 

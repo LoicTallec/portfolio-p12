@@ -6,26 +6,19 @@
   background-color: rgb(223, 223, 223);
   box-shadow: 1px 0 10px rgb(105, 105, 105);
 
-
-  .logo-nav {
-    display: flex;
-    align-items: center;
-    margin: auto;
-  }
-
   h1 {
     margin: 10px;
   }
 
-  img {
+  .logo-nav {
     width: 50px;
     height: 100%;
+    display: none;
   }
 
   ul {
     display: flex;
     width: 100%;
-    max-width: 600px;
     justify-content: space-around;
     margin: auto;
 
@@ -54,11 +47,10 @@
     flex-direction: row;
 
     .logo-nav {
-      margin-left: 0;
+      display: block;
+      margin-left: 20px;
     }
-    img {
-      margin: 10px 0;
-    }
+    
 
     h1 {
       margin: 0 15px 0 30px;
@@ -69,6 +61,7 @@
     ul {
       justify-content: right;
       margin-right: 20px;
+      max-width: 600px;
 
       li {
         margin-left: 100px;
