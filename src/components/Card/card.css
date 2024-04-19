@@ -15,9 +15,7 @@
 
     img {
         border-radius: 20px;
-        box-shadow: 0 10px 15px rgb(200, 200, 200);
-
-
+        box-shadow: 0 3px 10px rgb(200, 200, 200);
         object-fit: cover;
     }
 

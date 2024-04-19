@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./nav.css";
-import logo from "../../assets/images/visuart.png";
+import logo from "../../assets/images/visuart.webp";
 
 function Nav() {
   return (

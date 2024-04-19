@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import "./home.css";
-import Projects from "../../assets/projets.json"
+import Projects from "../../assets/projets.js"
 import Card from "../../components/Card/Card";
 import { Link } from "react-router-dom";
+
 
 function Home() {
   const [cards, setCards] = useState([]);
@@ -11,10 +12,10 @@ function Home() {
     setCards(Projects)
   } , [])
 
-  console.log(cards)
+  console.log(Projects)
 
   return (
-    <main>
+    <main className="home">
       <article className="introduction">
         <h2>Mon parcourt</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloribus itaque quia, ipsum, ratione, rem corporis quis tempora ullam harum deleniti accusamus tempore aliquid a aspernatur! Repellat maiores quos aut?</p>
@@ -26,7 +27,7 @@ function Home() {
           {Projects.map((card) => (
             <li key={card.id}>
               <Link to={`/fullCard/${card.id}`}>
-              <Card src={card.picture} alt={card.title} content={card.name} />
+              <Card src={card.cover} alt={card.title} content={card.name} />
               </Link>
             </li>
           ))}

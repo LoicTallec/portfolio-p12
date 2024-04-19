@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/images/visuart.png';
+import logo from '../../assets/images/visuart.webp';
 import "./footer.css";
 
 function Footer() {
